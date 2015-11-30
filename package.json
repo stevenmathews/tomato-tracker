@@ -42,8 +42,7 @@
     "surge": "^0.17.3",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0",
-    "yeticss": "^7.0.5"
+    "webpack-dev-server": "^1.14.0"
   },
   "standard": {
     "globals": [
