@@ -1,30 +1,29 @@
 {
-  "name": "projecter",
-  "description": "Base for new projects to save time.",
-  "version": "0.9.4",
+  "name": "tomato-tracker",
+  "description": "Timesheets from pomodoros",
+  "version": "0.0.0",
   "author": "Steve Mathews <stevenmathews.nz@gmail.com>",
   "bugs": {
-    "url": "https://github.com/stevenmathews/projecter/issues"
+    "url": "https://github.com/stevenmathews/tomato-tracker/issues"
   },
-  "homepage": "https://github.com/stevenmathews/projecter#readme",
+  "homepage": "https://github.com/stevenmathews/tomato-tracker#readme",
   "keywords": [
-    "projecter",
-    "boilerplate",
-    "scaffold",
-    "skeleton"
+    "tomato-tracker",
+    "timesheet",
+    "pomodoro"
   ],
   "license": "MIT",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stevenmathews/projecter.git"
+    "url": "git+https://github.com/stevenmathews/tomato-tracker.git"
   },
   "scripts": {
     "start": "webpack-dev-server --inline --quiet",
     "karma": "standard && karma start",
     "test": "karma start --single-run --browsers Firefox",
     "build": "NODE_ENV=production webpack",
-    "deploy": "surge -p public -d projecter.surge.sh"
+    "deploy": "surge -p public -d tomato-tracker.surge.sh"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
