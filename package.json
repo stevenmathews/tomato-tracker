@@ -1,0 +1,56 @@
+{
+  "name": "tomato-tracker",
+  "description": "Timesheets from pomodoros",
+  "version": "0.0.0",
+  "author": "Steve Mathews <stevenmathews.nz@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/stevenmathews/tomato-tracker/issues"
+  },
+  "homepage": "https://github.com/stevenmathews/tomato-tracker#readme",
+  "keywords": [
+    "tomato-tracker",
+    "timesheet",
+    "pomodoro"
+  ],
+  "license": "MIT",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenmathews/tomato-tracker.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --inline --quiet",
+    "test": "standard && echo \"Error: no test specified.\"",
+    "build": "NODE_ENV=production webpack",
+    "deploy": "surge -p public -d tomato-tracker.surge.sh"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.1",
+    "babel-core": "^6.2.1",
+    "babel-eslint": "^5.0.0-beta4",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "hjs-webpack": "^5.0.1",
+    "json-loader": "^0.5.4",
+    "mocha": "^2.3.4",
+    "postcss-loader": "^0.8.0",
+    "standard": "^5.4.1",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.4.2",
+    "surge": "^0.17.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "yeticss": "^7.0.5"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "expect"
+    ],
+    "parser": "babel-eslint"
+  }
+}
