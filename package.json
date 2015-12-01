@@ -48,7 +48,8 @@
     "globals": [
       "describe",
       "it",
-      "expect"
+      "expect",
+      "Notification"
     ],
     "parser": "babel-eslint"
   },
