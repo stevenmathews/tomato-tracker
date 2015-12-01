@@ -11,6 +11,7 @@ export default function main ({DOM}) {
   'pomodoro-timer')
 
   return {
-    DOM: pomodoroTimer.DOM
+    DOM: pomodoroTimer.DOM,
+    notification: pomodoroTimer.notification
   }
 }

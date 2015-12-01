@@ -1,5 +1,6 @@
 import {div, i, p} from '@cycle/dom'
 import createCountdown from './helpers/create-countdown'
+import htmlNotification from './helpers/html-notification'
 
 function intent (DOM) {
   return {
@@ -33,6 +34,7 @@ export default function countdownTimer ({DOM, props$}, name = '') {
   const actions = intent(DOM)
   const state$ = model(actions, props$)
   return {
-    DOM: view(state$, name)
+    DOM: view(state$, name),
+    notification: htmlNotification(state$)
   }
 }
