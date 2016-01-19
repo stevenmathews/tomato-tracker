@@ -1,4 +1,4 @@
-import countdownTimer from './countdown_timer/main'
+import countdownTimer from './countdown_timer/index'
 import firebaseLogin from './firebase_login/main'
 import view from './view'
 import {Observable} from 'rx'
@@ -7,11 +7,10 @@ export default function main ({DOM}) {
   const facebookLogin = firebaseLogin(DOM)
   const pomodoroTimer = countdownTimer({
     DOM,
-    props$: Observable.just({
+    props$: Observable.of({
       startTimeMinutes: 0.05
     })
-  },
-  'pomodoro-timer')
+  })
 
   const vtree$ = view(
     facebookLogin.DOM,
