@@ -1,10 +1,10 @@
-import {div, i, p} from '@cycle/dom'
+import {div, p, img} from '@cycle/dom'
 
 export default function view (state$, name) {
   return state$.map((time) =>
     div('.timer', [
-      i('.start-timer-icon.fa.fa-play.fa-lg'),
-      i('.stop-timer-icon.fa.fa-stop.fa-lg'),
+      img('.start-timer-icon', {src: '/images/play.svg'}),
+      img('.stop-timer-icon', {src: '/images/stop.svg'}),
       p('.time', time)
     ])
   )
